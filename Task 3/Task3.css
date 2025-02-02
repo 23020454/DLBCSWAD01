@@ -1,0 +1,98 @@
+/* Basic Reset and Font Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  padding: 1rem;
+}
+
+article {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  margin-bottom: 1rem; /* margin at bottom for spacing when wrapping */
+}
+
+article h2 {
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Sidebar */
+aside {
+  width: 250px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    margin-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
