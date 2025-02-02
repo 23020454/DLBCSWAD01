@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Example</title>
+</head>
+<body>
+  <p id="text">Original Text</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("text").textContent = "Text changed via JavaScript!";
+    }
+  </script>
+</body>
+</html>
